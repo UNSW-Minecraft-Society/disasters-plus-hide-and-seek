@@ -43,3 +43,5 @@ team modify zombies color red
 team join players @a
 gamemode spectator @a[team=zombies]
 function carld:disasters/timetick
+
+title @a title "Disasters!"
