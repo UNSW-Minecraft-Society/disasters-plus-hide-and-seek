@@ -4,8 +4,8 @@ gamerule reduced_debug_info false
 execute if score Gamemode settings matches 1 run gamemode survival @a
 execute if score Gamemode settings matches 2 run gamemode adventure @a
 clear @a
-execute at @s run worldborder center ~ ~
-execute at @s run setworldspawn
+execute at @s align xyz run worldborder center ~ ~
+execute at @s align xyz run setworldspawn
 spawnpoint @a ~ ~ ~
 effect give @a saturation 15 1
 worldborder set 100
@@ -43,3 +43,5 @@ team modify zombies color red
 team join players @a
 gamemode spectator @a[team=zombies]
 function carld:disasters/timetick
+
+title @a title "Disasters!"

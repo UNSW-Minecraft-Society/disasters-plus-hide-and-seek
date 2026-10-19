@@ -1,15 +1,9 @@
 title @a title "GAME OVER"
 
-schedule clear carld:d/lavaloop
-schedule clear carld:d/water
-schedule clear carld:d/grass
-schedule clear carld:d/sixunder
-schedule clear carld:d/summerwind
-schedule clear carld:d/cavefog
 schedule clear carld:d/distancingloop
 schedule clear carld:d/lockdownloop
 
-
+#normalise attributes from disasters
 execute as @a run attribute @s minecraft:max_health base reset
 execute as @a run attribute @s minecraft:scale base reset
 execute as @a run attribute @s minecraft:bounciness base reset
@@ -18,14 +12,14 @@ execute as @a run attribute @s minecraft:jump_strength base reset
 
 schedule clear carld:disasters/timetick
 effect clear @a
-kill @e[type=wither]
-kill @e[type=warden]
-kill @e[type=slime]
-kill @e[type=marker]
-kill @e[type=ghast]
-kill @e[type=phantom]
-kill @e[type=blaze]
-kill @e[type=breeze]
+
+kill @e[tag=disastersummon]
+
+# clear various markers
+kill @e[type=marker,tag=disaster]
+kill @e[type=marker,tag=disasterloop]
+
+# haunted time set fix
 time set day
 
 scoreboard objectives remove time
