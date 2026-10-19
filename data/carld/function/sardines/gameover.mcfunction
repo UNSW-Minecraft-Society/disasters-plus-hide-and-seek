@@ -1,8 +1,7 @@
 title @a title "GAME OVER"
 
 schedule clear carld:sardines/timer
-tag @e remove winnerwinnerchickendinner
-kill @e[type=marker]
+kill @e[type=marker,tag=hideandseek]
 kill @e[type=item]
 effect clear @a
 time set day

@@ -29,7 +29,7 @@ team add sardines
 team modify sardines color aqua
 team modify players color green
 
-summon marker ~ ~ ~ {Tags:["middle"]}
+summon marker ~ ~ ~ {Tags:["middle","sardines"]}
 
 
 scoreboard objectives add dead deathCount
