@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "team": "players"
+        },
+        "entity": {
+          "type": "player",
+          "team": "sardines"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "carld:sardines/onhitsardine"
+  }
+}
