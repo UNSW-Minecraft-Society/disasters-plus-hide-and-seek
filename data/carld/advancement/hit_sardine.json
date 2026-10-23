@@ -1,14 +1,22 @@
 {
   "criteria": {
-    "requirement": {
+    "minecraft:player": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
-          "team": "players"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:team": "players"
+          }
         },
         "entity": {
-          "type": "player",
-          "team": "sardines"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:team": "sardines",
+            "minecraft:entity_type": "minecraft:player"
+          }
         }
       }
     }
