@@ -1,7 +1,7 @@
 scoreboard players add !Time! game 1
 
-execute if score !Time! game matches 90 as @a[team=players] run attribute @s minecraft:movement_speed base reset
-execute if score !Time! game matches 90 as @a[team=players] run attribute @s minecraft:jump_strength base reset
+execute if score !Time! game matches 90.. as @a[team=players] run attribute @s minecraft:movement_speed base reset
+execute if score !Time! game matches 90.. as @a[team=players] run attribute @s minecraft:jump_strength base reset
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:movement_speed base set 0.1
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:scale base set 0.2
 

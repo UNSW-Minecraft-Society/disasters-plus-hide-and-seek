@@ -34,14 +34,15 @@ summon marker ~ ~ ~ {Tags:["middle","sardines"]}
 
 scoreboard objectives add dead deathCount
 team add sardines sardines
+team modify sardines nametagVisibility hideForOtherTeams
 team add players players
 team add teams teams
 team join players @a
 
 team join sardines @r[team=players]
 
-attribute @a[team=players,limit=1,sort=random] minecraft:jump_strength base set 0
-attribute @a[team=players,limit=1,sort=random] minecraft:movement_speed base set 0
+execute as @a[team=players] run attribute @s minecraft:jump_strength base set 0
+execute as @a[team=players] run attribute @s minecraft:movement_speed base set 0
 effect give @a[team=players] minecraft:blindness 90 1 true
 effect give @a minecraft:resistance 95 100 true
 give @a[team=players] rotten_flesh[ \
