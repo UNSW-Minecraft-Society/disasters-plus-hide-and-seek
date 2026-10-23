@@ -53,5 +53,7 @@ give @a[team=players] rotten_flesh[ \
 ] 64
 tellraw @a[team=sardines] "You are the first sardine! Find a place to hide."
 tellraw @a[team=sardines] "In 90 seconds, you will turn into a fih and the seekers will be released."
+tellraw @a[team=players] "You are a player! In 90 seconds you will be released to find the sardines."
+tellraw @a[team=players] "Once you find them, attack to join their team and hide from other seekers."
 
 function carld:sardines/timer
