@@ -57,3 +57,4 @@ tellraw @a[team=players] "You are a player! In 90 seconds you will be released t
 tellraw @a[team=players] "Once you find them, attack to join their team and hide from other seekers."
 
 function carld:sardines/timer
+function carld:sardines/sardinetauntloop

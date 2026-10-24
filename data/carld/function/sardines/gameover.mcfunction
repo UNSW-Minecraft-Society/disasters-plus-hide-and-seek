@@ -1,6 +1,7 @@
 title @a title "GAME OVER"
 
 schedule clear carld:sardines/timer
+schedule clear carld:sardines/sardinetauntloop
 kill @e[type=marker,tag=hideandseek]
 kill @e[type=item]
 effect clear @a
