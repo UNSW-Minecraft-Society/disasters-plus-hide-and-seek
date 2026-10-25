@@ -11,7 +11,7 @@ execute if score !Time! game matches 200.. \
 
 execute if score !Time! game matches 300.. \
     if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
-    tellraw @r[team=sardines, distance=..10] "You hear the flopping of sardines nearby"
+    tellraw @r[team=players, distance=..10] "You hear the flopping of sardines nearby"
 
 execute if score !Time! game matches 300.. \
     if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
