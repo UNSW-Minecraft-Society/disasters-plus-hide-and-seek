@@ -1,8 +1,11 @@
+# increment timer by 1
 scoreboard players add !Time! game 1
 
+# players released after timer hits 90
 execute if score !Time! game matches 90.. as @a[team=players] run attribute @s minecraft:movement_speed base reset
 execute if score !Time! game matches 90.. as @a[team=players] run attribute @s minecraft:jump_strength base reset
 execute if score !Time! game matches 90.. as @a[team=players] run effect clear @s
+# sardines slowed down after timer hits 90
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:movement_speed base set 0
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:scale base set 0.6
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:air_drag_modifier base set 6
@@ -20,6 +23,7 @@ execute as @a[scores={dead=1}] \
 execute as @a[scores={dead=1}] run scoreboard players set @s dead 0
 gamemode adventure @a[team=zombies]
 
+# retrigger this loop every second
 schedule function carld:sardines/timer 1s
 
 execute unless entity @a[team=players] run function carld:sardines/gameover

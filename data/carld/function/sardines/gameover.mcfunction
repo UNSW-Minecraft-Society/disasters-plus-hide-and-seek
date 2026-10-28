@@ -2,15 +2,17 @@ title @a title "GAME OVER"
 
 schedule clear carld:sardines/timer
 schedule clear carld:sardines/sardinetauntloop
-kill @e[type=marker,tag=hideandseek]
-kill @e[type=item]
+
+# lowk there's only one marker for the centre I'm not using rn
+kill @e[type=marker,tag=sardines]
+# clear dropped items so people don't stash stuff
+kill @e[type=item] 
 effect clear @a
 time set day
 
 scoreboard objectives remove time
-scoreboard objectives remove disasters
 scoreboard objectives remove game
-scoreboard objectives remove dead
+
 execute as @a run attribute @s minecraft:movement_speed base reset
 execute as @a run attribute @s minecraft:jump_strength base reset
 execute as @a run attribute @s minecraft:scale base reset
@@ -20,5 +22,4 @@ effect clear @a
 
 team remove sardines
 team remove players
-team remove teams
 gamerule reduced_debug_info false

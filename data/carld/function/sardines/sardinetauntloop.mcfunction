@@ -1,18 +1,23 @@
+# flop sound
 execute if predicate carld:half_chance if predicate carld:half_chance as @r[team=sardines] at @s run \
     playsound entity.salmon.flop master @a ~ ~ ~
 
+# splash particles
 execute if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance \ 
     if predicate carld:half_chance as @a[team=sardines] at @s run \
     particle splash ~ ~ ~ 1 0 1 1 12
 
+# flop sound but more (after timer hits 200)
 execute if score !Time! game matches 200.. \
     if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
     playsound entity.salmon.flop master @a ~ ~ ~
 
+# flop flavor text to nearby players (after timer hits 300)
 execute if score !Time! game matches 300.. \
     if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
     tellraw @r[team=players, distance=..10] "You hear the flopping of sardines nearby"
 
+# splash particles but more (after timer hits 300)
 execute if score !Time! game matches 300.. \
     if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
     particle splash ~ ~ ~ 1 0 1 1 12
@@ -25,7 +30,7 @@ execute if score !Time! game matches 300.. \
 
 # except at the end where we just throw all the fih
 execute if score !Time! game matches 450.. \
-    if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
+    if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
     summon cod ~ ~ ~
 
 schedule function carld:sardines/sardinetauntloop 4s
