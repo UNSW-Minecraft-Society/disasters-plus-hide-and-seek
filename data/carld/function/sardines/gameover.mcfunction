@@ -10,7 +10,6 @@ kill @e[type=item]
 effect clear @a
 time set day
 
-scoreboard objectives remove time
 scoreboard objectives remove game
 
 execute as @a run attribute @s minecraft:movement_speed base reset
@@ -19,6 +18,7 @@ execute as @a run attribute @s minecraft:scale base reset
 execute as @a run attribute @s minecraft:air_drag_modifier base reset
 execute as @a run attribute @s minecraft:bounciness base reset
 effect clear @a
+effect give @a minecraft:glowing 20
 
 team remove sardines
 team remove players

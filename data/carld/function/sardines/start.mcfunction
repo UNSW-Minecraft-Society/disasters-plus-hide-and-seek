@@ -1,7 +1,9 @@
-# Starts a game after it has been initialised
+# Tries to call initialise if game has not been initialised
+execute unless score !IsSardinesInitialised! gamestate matches 1 run function carld:sardines/initialise
+scoreboard players set !IsSardinesInitialised! gamestate 0
 
-scoreboard objectives add dead deathCount
-team modify sardines nametagVisibility hideForOtherTeams
+# Starts a game after it has been initialised
+team join players @a[tag=!admin]
 
 team join sardines @r[team=players]
 
