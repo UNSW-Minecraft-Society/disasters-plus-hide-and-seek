@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "minecraft:player": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "team": "stucks"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "team": "frees"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "carld:stuckinthemud/onhitbyfree"
+  }
+}

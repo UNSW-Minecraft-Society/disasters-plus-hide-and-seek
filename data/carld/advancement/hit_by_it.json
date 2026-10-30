@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "minecraft:player": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "team": "frees"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "team": "its"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "carld:stuckinthemud/onhitbyit"
+  }
+}
