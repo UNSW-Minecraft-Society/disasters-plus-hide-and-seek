@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "minecraft:player": {
+    "player_tag_sardine": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {

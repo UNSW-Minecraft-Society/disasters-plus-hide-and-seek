@@ -1,15 +1,19 @@
 {
   "criteria": {
-    "minecraft:player": {
+    "it_tag_free": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "player": {
-          "team": "stucks"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:team": "stucks"
+          }
         },
         "damage": {
           "source_entity": {
-            "type": "minecraft:player",
-            "team": "frees"
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:team": "frees"
           }
         }
       }
