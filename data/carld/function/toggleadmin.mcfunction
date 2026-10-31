@@ -3,7 +3,7 @@
 tag @s[tag=admin] add wasadmin
 
 tellraw @s[tag=!admin] "toggled admin mode on"
-tag @s[tag=!admin] add isadmin
+tag @s[tag=!admin] add admin
 
 tellraw @s[tag=wasadmin] "toggled admin mode off"
 tag @s[tag=wasadmin] remove admin
