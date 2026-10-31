@@ -1,6 +1,7 @@
 title @a title "GAME OVER"
 
 schedule clear carld:stuckinthemud/timer
+schedule clear carld:stuckinthemud/stuckzombificationloop
 kill @e[type=marker,tag=hideandseek]
 kill @e[type=item]
 effect clear @a
