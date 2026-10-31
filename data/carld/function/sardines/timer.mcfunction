@@ -28,4 +28,4 @@ execute as @a[scores={dead=1}] run scoreboard players set @s dead 0
 schedule function carld:sardines/timer 1s
 
 execute unless entity @a[team=players] run function carld:sardines/gameover
-execute if score !Time! game matches 500.. run function carld:sardines/gameover
+execute if score !Time! game matches 300.. run function carld:sardines/gameover
