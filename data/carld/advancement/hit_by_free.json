@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "it_tag_free": {
+    "free_tag_stuck": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "player": {
