@@ -1,12 +1,10 @@
 # Tries to call initialise if game has not been initialised
 execute unless score !IsSardinesInitialised! gamestate matches 1 run function carld:sardines/initialise
+team join players @a[tag=!admin, team=!sardines]
+execute unless score !IsSardinesInitialised! gamestate matches 1 run team join sardines @r[team=players]
 scoreboard players set !IsSardinesInitialised! gamestate 0
 
 # Starts a game after it has been initialised
-team join players @a[tag=!admin]
-
-team join sardines @r[team=players]
-
 execute as @a[team=players] run attribute @s minecraft:jump_strength base set 0
 execute as @a[team=players] run attribute @s minecraft:movement_speed base set 0
 effect give @a[team=players] minecraft:blindness 90 1 true

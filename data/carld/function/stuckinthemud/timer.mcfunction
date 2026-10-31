@@ -9,7 +9,6 @@ execute if score !Time! game matches 30.. as @a[team=frees] run attribute @s min
 execute if score !Time! game matches 30.. as @a[team=frees] run attribute @s minecraft:bounciness base reset
 
 execute if score !Time! game matches 30.. as @a[team=stucks] run attribute @s minecraft:movement_speed base set 0
-execute if score !Time! game matches 30.. as @a[team=stucks] run attribute @s minecraft:scale base set 0.6
 execute if score !Time! game matches 30.. as @a[team=stucks] run attribute @s minecraft:air_drag_modifier base set 6
 execute if score !Time! game matches 30.. as @a[team=stucks] run attribute @s minecraft:bounciness base set 0.4
 
