@@ -6,7 +6,7 @@ schedule clear carld:sardines/sardinetauntloop
 # lowk there's only one marker for the centre I'm not using rn
 kill @e[type=marker,tag=sardines]
 # clear dropped items so people don't stash stuff
-kill @e[type=item] 
+kill @e[type=item]
 effect clear @a
 time set day
 

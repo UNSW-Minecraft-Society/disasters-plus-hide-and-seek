@@ -30,7 +30,7 @@ execute if score !Time! game matches 300.. \
 
 # except at the end where we just throw all the fih
 execute if score !Time! game matches 450.. \
-    if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @a[team=sardines] at @s run \
+    if predicate carld:half_chance as @a[team=sardines] at @s run \
     summon cod ~ ~ ~
 
 schedule function carld:sardines/sardinetauntloop 4s

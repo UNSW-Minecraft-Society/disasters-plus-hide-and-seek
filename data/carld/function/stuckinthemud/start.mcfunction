@@ -1,6 +1,7 @@
 # Tries to call initialise if game has not been initialised
-execute unless score !IsStuckInTheMudInitialised! gamestate matches 1 run function carld:sardines/initialise
-execute unless score !IsStuckInTheMudInitialised! gamestate matches 1 run team join its @r
+team add its
+execute unless score !IsStuckInTheMudInitialised! gamestate matches 1 run team join its @r[tag=!admin]
+execute unless score !IsStuckInTheMudInitialised! gamestate matches 1 run function carld:stuckinthemud/initialise
 scoreboard players set !IsStuckInTheMudInitialised! gamestate 0
 
 # Starts a game after it has been initialised
@@ -19,5 +20,6 @@ give @a[team=its] rotten_flesh[ \
 
 tellraw @a[team=frees] "You are not it! Don't get tipped by those who are it, and help free those stuck in the mud."
 tellraw @a[team=its] "You are it! Tag free people to make them stuck in the mud."
+tellraw @a "Taggers will be released in 10 seconds."
 
 function carld:stuckinthemud/timer

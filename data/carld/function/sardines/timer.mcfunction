@@ -11,6 +11,8 @@ execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s 
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:air_drag_modifier base set 6
 execute if score !Time! game matches 90.. as @a[team=sardines] run attribute @s minecraft:bounciness base set 0.4
 
+advancement revoke @a only carld:hit_sardine
+
 effect give @a[team=sardines] minecraft:weakness infinite 100 true
 effect give @a[team=sardines] minecraft:regeneration infinite 1 true
 
@@ -21,7 +23,6 @@ execute as @a[scores={dead=1}] \
         consumable={on_consume_effects:[{type:apply_effects,effects:[{id:instant_damage,duration:300,amplifier:20}]}]} \
     ] 64
 execute as @a[scores={dead=1}] run scoreboard players set @s dead 0
-gamemode adventure @a[team=zombies]
 
 # retrigger this loop every second
 schedule function carld:sardines/timer 1s

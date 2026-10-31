@@ -1,4 +1,4 @@
-# Initialises the game but does not start, 
+# Initialises the game but does not start,
 # gives option to add variable numbers of its/setup other game config
 tp @a @s
 gamemode adventure @a
@@ -22,6 +22,7 @@ scoreboard objectives add settings dummy
 # game sidebar display objective (used for timer)
 scoreboard objectives add game dummy
 scoreboard objectives setdisplay sidebar game
+scoreboard players set !Time! game 0
 # objective for marking dead players for respawning effects
 scoreboard objectives add dead deathCount
 # objective for game state tracking
@@ -36,7 +37,7 @@ team modify its color red
 
 team add frees
 team modify its friendlyFire false
-team modify frees nametagVisibility hideForOtherTeams
+team modify frees nametagVisibility always
 team modify frees collisionRule never
 team modify frees color aqua
 

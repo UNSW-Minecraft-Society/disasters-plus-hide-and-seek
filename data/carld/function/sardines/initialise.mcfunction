@@ -1,4 +1,4 @@
-# Initialises the game but does not start, 
+# Initialises the game but does not start,
 # gives option to add variable numbers of sardines/setup other game config
 tp @a @s
 gamemode adventure @a
@@ -22,11 +22,18 @@ scoreboard objectives add settings dummy
 # game sidebar display objective (used for timer)
 scoreboard objectives add game dummy
 scoreboard objectives setdisplay sidebar game
+scoreboard players set !Time! game 0
 # objective for marking dead players for respawning effects
 scoreboard objectives add dead deathCount
 # objective for game state tracking
 scoreboard objectives add gamestate dummy
 scoreboard players set !IsSardinesInitialised! gamestate 1
+
+execute as @a run attribute @s minecraft:movement_speed base reset
+execute as @a run attribute @s minecraft:jump_strength base reset
+execute as @a run attribute @s minecraft:scale base reset
+execute as @a run attribute @s minecraft:air_drag_modifier base reset
+execute as @a run attribute @s minecraft:bounciness base reset
 
 # add and config teams
 team add players

@@ -15,6 +15,7 @@ execute as @a run attribute @s minecraft:air_drag_modifier base reset
 execute as @a run attribute @s minecraft:bounciness base reset
 effect clear @a
 
-team remove sardines
-team remove players
+team remove its
+team remove frees
+team remove stucks
 gamerule reduced_debug_info false
