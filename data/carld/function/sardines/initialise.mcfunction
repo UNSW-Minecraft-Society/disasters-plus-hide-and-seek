@@ -48,3 +48,7 @@ team modify sardines nametagVisibility hideForOtherTeams
 
 # lowk not using this rn
 summon marker ~ ~ ~ {Tags:["middle","sardines"]}
+
+tellraw @s "Add people to be sardines using:"
+tellraw @s "/team join sardines <selector>"
+tellraw @s "prior to game start."

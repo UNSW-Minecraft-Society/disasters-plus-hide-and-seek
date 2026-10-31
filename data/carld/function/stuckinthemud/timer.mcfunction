@@ -2,6 +2,9 @@ scoreboard players add !Time! game 1
 
 execute if score !Time! game matches 10.. as @a[team=its] run attribute @s minecraft:movement_speed base set 0.13
 execute if score !Time! game matches 10.. as @a[team=its] run attribute @s minecraft:jump_strength base reset
+execute if score !Time! game matches 10.. as @a[team=its] run attribute @s minecraft:scale base reset
+execute if score !Time! game matches 10.. as @a[team=its] run attribute @s minecraft:air_drag_modifier base reset
+execute if score !Time! game matches 10.. as @a[team=its] run attribute @s minecraft:bounciness base reset
 
 execute if score !Time! game matches 10.. as @a[team=frees] run attribute @s minecraft:movement_speed base reset
 execute if score !Time! game matches 10.. as @a[team=frees] run attribute @s minecraft:scale base reset

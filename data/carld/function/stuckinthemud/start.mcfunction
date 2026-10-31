@@ -1,6 +1,6 @@
 # Tries to call initialise if game has not been initialised
 team add its
-execute unless score !IsStuckInTheMudInitialised! gamestate matches 1 run team join its @r[tag=!admin]
+execute unless entity @a[team=its] run team join its @r[tag=!admin]
 execute unless score !IsStuckInTheMudInitialised! gamestate matches 1 run function carld:stuckinthemud/initialise
 scoreboard players set !IsStuckInTheMudInitialised! gamestate 0
 

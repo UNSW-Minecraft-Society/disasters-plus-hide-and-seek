@@ -1,6 +1,6 @@
 # Tries to call initialise if game has not been initialised; adds one sardine
 team add sardines
-execute unless score !IsSardinesInitialised! gamestate matches 1 run team join sardines @r[tag=!admin]
+execute unless entity @a[team=sardines] run team join sardines @r[tag=!admin]
 execute unless score !IsSardinesInitialised! gamestate matches 1 run function carld:sardines/initialise
 
 scoreboard players set !IsSardinesInitialised! gamestate 0

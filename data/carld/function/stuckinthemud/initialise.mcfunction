@@ -51,5 +51,6 @@ summon marker ~ ~ ~ {Tags:["middle","stuckinthemud"]}
 
 scoreboard objectives add dead deathCount
 
-tellraw @s "Add people to be it using /team join its <selector>"
-tellraw @s "Else defaults to one random person it"
+tellraw @s "Add people to be it using:"
+tellraw @s "/team join its <selector>"
+tellraw @s "prior to game start."
