@@ -44,7 +44,7 @@ team add stucks
 team modify stucks friendlyFire false
 team modify stucks nametagVisibility always
 team modify stucks collisionRule never
-team modify stucks color dark_red
+team modify stucks color gold
 
 summon marker ~ ~ ~ {Tags:["middle","stuckinthemud"]}
 
