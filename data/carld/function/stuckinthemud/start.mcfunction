@@ -19,7 +19,13 @@ give @a[team=its] rotten_flesh[ \
 ] 64
 
 tellraw @a[team=frees] "You are not it! Don't get tipped by those who are it, and help free those stuck in the mud."
+title @a[team=frees] subtitle "You are not it!"
+
 tellraw @a[team=its] "You are it! Tag free people to make them stuck in the mud."
+title @a[team=its] subtitle "You are it!"
+
 tellraw @a "Taggers will be released in 10 seconds."
+title @a title ""
 
 function carld:stuckinthemud/timer
+function carld:stuckinthemud/stuckzombificationloop
