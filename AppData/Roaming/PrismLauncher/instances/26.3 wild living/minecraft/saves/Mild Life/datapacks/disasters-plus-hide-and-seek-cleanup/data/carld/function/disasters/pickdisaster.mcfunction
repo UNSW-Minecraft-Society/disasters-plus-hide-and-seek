@@ -25,12 +25,12 @@ execute if entity @e[tag=dheavywind,tag=active] run function carld:d/heavywind
 execute if entity @e[tag=dlethaljumps,tag=active] run function carld:d/lethaljumps
 execute if entity @e[tag=dsnowstorm,tag=active] run function carld:d/snowstorm
 execute if entity @e[tag=dswappage,tag=active] run function carld:d/swappage
-execute if entity @e[tag=dendrift,tag=active] run function carld:d/endrift
 execute if entity @e[tag=dsafezone,tag=active] run function carld:d/safezone
 
 #floor raisers
 execute if entity @e[tag=dlava,tag=active] run function carld:disasters/disaster/lava/activate
 execute if entity @e[tag=dcavesmog,tag=active] run function carld:disasters/disaster/cavefog/activate
+execute if entity @e[tag=dcallofthedepths,tag=active] run function carld:disasters/disaster/callofthedepths/activate
 
 #hazards
 execute if entity @e[tag=dwater,tag=active] run function carld:disasters/disaster/water/activate
@@ -43,6 +43,7 @@ execute if entity @e[tag=dwither,tag=active] run function carld:disasters/disast
 execute if entity @e[tag=dwarden,tag=active] run function carld:disasters/disaster/warden/activate
 execute if entity @e[tag=dcreaking,tag=active] run function carld:disasters/disaster/creaking/activate
 execute if entity @e[tag=dsummerwind,tag=active] run function carld:disasters/disaster/summerwind/activate
+execute if entity @e[tag=dendrift,tag=active] run function carld:disasters/disaster/endrift/activate
 
 #attribute alterations
 execute if entity @e[tag=dbouncy,tag=active] run function carld:disasters/disaster/bouncy/activate

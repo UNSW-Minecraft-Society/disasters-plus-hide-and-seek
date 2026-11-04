@@ -18,9 +18,6 @@ kill @e[type=marker,tag=disasterloop]
 # haunted time set fix
 time set day
 
-# overclock fix
-tick rate 20
-
 scoreboard objectives remove time
 scoreboard objectives remove disasters
 scoreboard objectives remove game

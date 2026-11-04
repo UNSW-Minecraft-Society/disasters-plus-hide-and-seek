@@ -30,3 +30,4 @@ summon marker ~ ~ ~ {Tags:["disaster","dsafezone"]}
 summon marker ~ ~ ~ {Tags:["disaster","dbouncy"]}
 summon marker ~ ~ ~ {Tags:["disaster","dhumanpinball"]}
 summon marker ~ ~ ~ {Tags:["disaster","dtornado"]}
+summon marker ~ ~ ~ {Tags:["disaster","dcallofthedepths"]}

@@ -23,6 +23,13 @@
     {
       "type": "minecraft:item",
       "item": {
+        "id": "minecraft:deepslate"
+      },
+      "description": "\"Call of the Depths\" damages the player closest to the bottom of the map."
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
         "id": "minecraft:stone"
       },
       "description": "\"Cave Smog\" damages you if you are standing below Y level 63."
@@ -208,6 +215,13 @@
         "id": "minecraft:magenta_glazed_terracotta"
       },
       "description": "\"Swappage\" swaps two players in position every so often."
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:wind_charge"
+      },
+      "description": "\"Tornado\" summons a tornado that throws entities in the air and summons breezes."
     },
     {
       "type": "minecraft:item",
