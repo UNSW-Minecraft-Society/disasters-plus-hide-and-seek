@@ -51,6 +51,13 @@
     {
       "type": "minecraft:item",
       "item": {
+        "id": "minecraft:ice_ball"
+      },
+      "description": "\"Hailstorm\" causes hail and thunder to strike the ground, and spreads Frosty's minions across the map."
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
         "id": "minecraft:glistering_melon_slice"
       },
       "description": "\"Half Health\" reduces player max health to five hearts."

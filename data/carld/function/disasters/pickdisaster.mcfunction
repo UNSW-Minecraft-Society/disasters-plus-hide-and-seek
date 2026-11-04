@@ -28,6 +28,8 @@ execute if entity @e[tag=dswappage,tag=active] run function carld:d/swappage
 execute if entity @e[tag=dendrift,tag=active] run function carld:d/endrift
 execute if entity @e[tag=dsafezone,tag=active] run function carld:d/safezone
 
+execute if entity @e[tag=dhailstorm,tag=active] run function carld:disaster/hailstorm/activate
+
 #floor raisers
 execute if entity @e[tag=dlava,tag=active] run function carld:disaster/lava/activate
 execute if entity @e[tag=dcavesmog,tag=active] run function carld:disaster/cavefog/activate
