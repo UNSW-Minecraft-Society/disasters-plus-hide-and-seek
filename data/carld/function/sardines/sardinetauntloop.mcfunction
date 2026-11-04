@@ -23,9 +23,9 @@ execute if score !Time! game matches 200.. \
     particle splash ~ ~ ~ 1 0 1 1 12
 
 # should be ~0.78 cods spawned per sardine each game
-execute if score !Time! game matches 200.. \
+execute as @a if score !Time! game matches 200.. \
     if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance \ 
-    if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @r[team=sardines] at @a run \
+    if predicate carld:half_chance if predicate carld:half_chance if predicate carld:half_chance as @s[team=sardines] at @s run \
     summon cod ~ ~ ~
 
 # except at the end where we just throw all the fih
