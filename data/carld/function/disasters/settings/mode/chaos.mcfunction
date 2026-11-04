@@ -28,3 +28,4 @@ summon marker ~ ~ ~ {Tags:["disaster","dswappage"]}
 summon marker ~ ~ ~ {Tags:["disaster","dendrift"]}
 summon marker ~ ~ ~ {Tags:["disaster","dsafezone"]}
 summon marker ~ ~ ~ {Tags:["disaster","dbouncy"]}
+summon marker ~ ~ ~ {Tags:["disaster","dhailstorm"]}
