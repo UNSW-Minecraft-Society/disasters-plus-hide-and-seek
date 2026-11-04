@@ -33,7 +33,7 @@ title @a[team=sardines] subtitle "You are the sardine!"
 
 tellraw @a[team=players] "You are a player! In 90 seconds you will be released to find the sardines."
 tellraw @a[team=players] "Once you find them, attack to join their team and hide from other seekers."
-title @a[team=sardines] subtitle "You are not the sardine!"
+title @a[team=players] subtitle "You are not the sardine!"
 
 title @a title ""
 
